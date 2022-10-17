@@ -1,0 +1,14 @@
+def min_max(number):
+  l = number[0]
+  s = number[0]
+  for num in number:
+    if num < s:
+      s = num
+    elif num > l:
+        l = num
+  return s, l
+
+print(min_max([1, 2, 3, 4, 5]))
+print(min_max([2334454, 5]))
+print(min_max([1]))
+
